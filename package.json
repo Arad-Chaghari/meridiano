@@ -1,0 +1,21 @@
+{
+  "name": "meridiano-servicio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Servicio que actualiza cada día las noticias de Meridiano por país y tema",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "probe": "node scripts/probe.mjs",
+    "update": "node scripts/update.mjs",
+    "update:es": "node scripts/update.mjs --countries ES",
+    "test": "node --test scripts/test/*.test.mjs",
+    "serve": "npx --yes serve site"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.1",
+    "fast-xml-parser": "^4.5.7"
+  }
+}
