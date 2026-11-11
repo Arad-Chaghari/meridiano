@@ -1,0 +1,290 @@
+[
+  {
+    "key": "0.0",
+    "group": "Política y gobierno",
+    "name": "Política nacional",
+    "detail": "gobierno, parlamento, partidos, elecciones"
+  },
+  {
+    "key": "0.1",
+    "group": "Política y gobierno",
+    "name": "Política regional y local",
+    "detail": "comunidades, provincias, ayuntamientos"
+  },
+  {
+    "key": "0.2",
+    "group": "Política y gobierno",
+    "name": "Justicia y tribunales",
+    "detail": ""
+  },
+  {
+    "key": "0.3",
+    "group": "Política y gobierno",
+    "name": "Corrupción y casos judiciales",
+    "detail": ""
+  },
+  {
+    "key": "1.0",
+    "group": "Economía y negocios",
+    "name": "Macroeconomía",
+    "detail": "inflación, PIB, empleo, deuda"
+  },
+  {
+    "key": "1.1",
+    "group": "Economía y negocios",
+    "name": "Empresas y mercados",
+    "detail": "bolsa, banca, sectores industriales"
+  },
+  {
+    "key": "1.2",
+    "group": "Economía y negocios",
+    "name": "Mercado laboral y salarios",
+    "detail": ""
+  },
+  {
+    "key": "1.3",
+    "group": "Economía y negocios",
+    "name": "Vivienda e inmobiliario",
+    "detail": ""
+  },
+  {
+    "key": "1.4",
+    "group": "Economía y negocios",
+    "name": "Consumo y precios",
+    "detail": ""
+  },
+  {
+    "key": "1.5",
+    "group": "Economía y negocios",
+    "name": "Impuestos y presupuestos públicos",
+    "detail": ""
+  },
+  {
+    "key": "2.0",
+    "group": "Internacional",
+    "name": "Relaciones exteriores y diplomacia",
+    "detail": ""
+  },
+  {
+    "key": "2.1",
+    "group": "Internacional",
+    "name": "Conflictos y guerras",
+    "detail": ""
+  },
+  {
+    "key": "2.2",
+    "group": "Internacional",
+    "name": "Organismos internacionales",
+    "detail": "ONU, UE, OTAN, etc."
+  },
+  {
+    "key": "2.3",
+    "group": "Internacional",
+    "name": "Inmigración y fronteras",
+    "detail": ""
+  },
+  {
+    "key": "3.0",
+    "group": "Sociedad",
+    "name": "Educación",
+    "detail": ""
+  },
+  {
+    "key": "3.1",
+    "group": "Sociedad",
+    "name": "Sanidad y salud pública",
+    "detail": ""
+  },
+  {
+    "key": "3.2",
+    "group": "Sociedad",
+    "name": "Pensiones y servicios sociales",
+    "detail": ""
+  },
+  {
+    "key": "3.3",
+    "group": "Sociedad",
+    "name": "Igualdad, derechos y minorías",
+    "detail": ""
+  },
+  {
+    "key": "3.4",
+    "group": "Sociedad",
+    "name": "Familia y demografía",
+    "detail": ""
+  },
+  {
+    "key": "3.5",
+    "group": "Sociedad",
+    "name": "Religión",
+    "detail": ""
+  },
+  {
+    "key": "4.0",
+    "group": "Seguridad y sucesos",
+    "name": "Crimen y delincuencia",
+    "detail": ""
+  },
+  {
+    "key": "4.1",
+    "group": "Seguridad y sucesos",
+    "name": "Accidentes y emergencias",
+    "detail": ""
+  },
+  {
+    "key": "4.2",
+    "group": "Seguridad y sucesos",
+    "name": "Fuerzas de seguridad y defensa",
+    "detail": ""
+  },
+  {
+    "key": "4.3",
+    "group": "Seguridad y sucesos",
+    "name": "Terrorismo",
+    "detail": ""
+  },
+  {
+    "key": "5.0",
+    "group": "Medio ambiente y territorio",
+    "name": "Clima y cambio climático",
+    "detail": ""
+  },
+  {
+    "key": "5.1",
+    "group": "Medio ambiente y territorio",
+    "name": "Energía",
+    "detail": "renovables, petróleo, electricidad"
+  },
+  {
+    "key": "5.2",
+    "group": "Medio ambiente y territorio",
+    "name": "Desastres naturales",
+    "detail": "inundaciones, incendios, terremotos"
+  },
+  {
+    "key": "5.3",
+    "group": "Medio ambiente y territorio",
+    "name": "Agricultura, pesca y mundo rural",
+    "detail": ""
+  },
+  {
+    "key": "5.4",
+    "group": "Medio ambiente y territorio",
+    "name": "Transporte e infraestructuras",
+    "detail": ""
+  },
+  {
+    "key": "6.0",
+    "group": "Ciencia y tecnología",
+    "name": "Inteligencia artificial y empresas tecnológicas",
+    "detail": ""
+  },
+  {
+    "key": "6.1",
+    "group": "Ciencia y tecnología",
+    "name": "Ciberseguridad y privacidad",
+    "detail": ""
+  },
+  {
+    "key": "6.2",
+    "group": "Ciencia y tecnología",
+    "name": "Investigación científica y espacio",
+    "detail": ""
+  },
+  {
+    "key": "6.3",
+    "group": "Ciencia y tecnología",
+    "name": "Telecomunicaciones",
+    "detail": ""
+  },
+  {
+    "key": "7.0",
+    "group": "Cultura y entretenimiento",
+    "name": "Cine, series y música",
+    "detail": ""
+  },
+  {
+    "key": "7.1",
+    "group": "Cultura y entretenimiento",
+    "name": "Literatura y arte",
+    "detail": ""
+  },
+  {
+    "key": "7.2",
+    "group": "Cultura y entretenimiento",
+    "name": "Televisión y celebridades",
+    "detail": ""
+  },
+  {
+    "key": "7.3",
+    "group": "Cultura y entretenimiento",
+    "name": "Gastronomía",
+    "detail": ""
+  },
+  {
+    "key": "7.4",
+    "group": "Cultura y entretenimiento",
+    "name": "Videojuegos",
+    "detail": ""
+  },
+  {
+    "key": "8.0",
+    "group": "Deportes",
+    "name": "Fútbol y deportes principales del país",
+    "detail": ""
+  },
+  {
+    "key": "8.1",
+    "group": "Deportes",
+    "name": "Competiciones internacionales",
+    "detail": "Mundiales, Juegos Olímpicos"
+  },
+  {
+    "key": "8.2",
+    "group": "Deportes",
+    "name": "Deportes minoritarios y deporte base",
+    "detail": ""
+  },
+  {
+    "key": "9.0",
+    "group": "Estilo de vida",
+    "name": "Viajes y turismo",
+    "detail": ""
+  },
+  {
+    "key": "9.1",
+    "group": "Estilo de vida",
+    "name": "Moda y tendencias",
+    "detail": ""
+  },
+  {
+    "key": "9.2",
+    "group": "Estilo de vida",
+    "name": "Salud y bienestar",
+    "detail": ""
+  },
+  {
+    "key": "9.3",
+    "group": "Estilo de vida",
+    "name": "Motor",
+    "detail": ""
+  },
+  {
+    "key": "10.0",
+    "group": "Opinión y análisis",
+    "name": "Editoriales, columnas y tribunas",
+    "detail": ""
+  },
+  {
+    "key": "10.1",
+    "group": "Opinión y análisis",
+    "name": "Fact-checking",
+    "detail": "verificación de datos"
+  },
+  {
+    "key": "10.2",
+    "group": "Opinión y análisis",
+    "name": "Reportajes de investigación",
+    "detail": ""
+  }
+]
