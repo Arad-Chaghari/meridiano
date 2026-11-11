@@ -56,9 +56,9 @@ Cada ejecución reescribe cientos de archivos. Si se guardaran en `main`, el his
 
 ## Lo que está probado y lo que no
 
-* ✅ Probado (26 pruebas automáticas + ejecución completa con fuente simulada + prueba de la web con datos reales de España): lectura y normalización de GDELT y RSS, reintentos y límite de peticiones, identificadores estables, duplicados, clasificación con respuestas correctas y defectuosas, caducidad, reutilización, escritura de archivos y carga en la web.
-* ⚠️ **No probado con servicios reales** (no tenía acceso a ellos): las llamadas reales a GDELT y a la API de Claude, y los flujos de GitHub (la sintaxis está validada, pero no se han ejecutado). Haz primero una ejecución con 2–3 países y revisa los resultados.
-* ⚠️ **Nombres de país de GDELT:** GDELT acepta nombres sin espacios (`unitedkingdom`) o códigos FIPS (que **no** coinciden con ISO). El paso 4 comprueba y guarda automáticamente el que funciona para cada país.
+* Probado (26 pruebas automáticas + ejecución completa con fuente simulada + prueba de la web con datos reales de España): lectura y normalización de GDELT y RSS, reintentos y límite de peticiones, identificadores estables, duplicados, clasificación con respuestas correctas y defectuosas, caducidad, reutilización, escritura de archivos y carga en la web.
+* **No probado con servicios reales** (no tenía acceso a ellos): las llamadas reales a GDELT y a la API de Claude, y los flujos de GitHub (la sintaxis está validada, pero no se han ejecutado). Haz primero una ejecución con 2–3 países y revisa los resultados.
+* **Nombres de país de GDELT:** GDELT acepta nombres sin espacios (`unitedkingdom`) o códigos FIPS (que **no** coinciden con ISO). El paso 4 comprueba y guarda automáticamente el que funciona para cada país.
 
 ## Siguiente fase (aún no incluida)
 
