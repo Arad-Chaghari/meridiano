@@ -1,0 +1,3 @@
+{
+  "_ayuda": "Opcional: añade feeds RSS por país para complementar a GDELT (suelen traer descripción e imagen). Formato: \"ES\": [{ \"name\": \"Nombre del medio\", \"url\": \"https://…/rss.xml\" }]. Comprueba cada URL antes de añadirla."
+}

@@ -1,0 +1,74 @@
+name: Actualizar noticias
+
+on:
+  schedule:
+    - cron: '0 5 * * *'    # 05:00 UTC
+    - cron: '0 17 * * *'   # 17:00 UTC
+  workflow_dispatch:
+    inputs:
+      countries:
+        description: 'Códigos de país separados por comas (vacío = todos)'
+        required: false
+        default: ''
+
+concurrency:
+  group: update-news
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm test
+
+      - name: Recuperar lo ya clasificado (rama «data»)
+        run: |
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            git fetch --depth=1 origin data
+            rm -rf site/data && mkdir -p site/data
+            git archive FETCH_HEAD | tar -x -C site/data
+          fi
+
+      - name: Buscar, clasificar y traducir
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          COUNTRIES: ${{ inputs.countries }}
+        run: |
+          if [ -n "$COUNTRIES" ]; then
+            node scripts/update.mjs --countries "$COUNTRIES"
+          else
+            node scripts/update.mjs
+          fi
+
+      - name: Publicar los datos en la rama «data» (sin acumular historial)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tmp="$(mktemp -d)"
+          cp -r site/data/. "$tmp"
+          cd "$tmp"
+          git init -q -b data
+          git config user.name "meridiano-bot"
+          git config user.email "meridiano-bot@users.noreply.github.com"
+          git add -A
+          git commit -qm "Noticias $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          auth="$(printf 'x-access-token:%s' "$GH_TOKEN" | base64 -w0)"
+          git -c http.extraheader="AUTHORIZATION: basic ${auth}" push -q --force origin data
+
+  deploy:
+    needs: update
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/site.yml
